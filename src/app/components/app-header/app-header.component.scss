@@ -1,0 +1,108 @@
+.bg-logo {
+  width: 125vw;
+  height: 45vh;
+  min-height: 200px;
+  position: fixed;
+  background: white;
+  border-radius: 30%;
+  transform: rotate(-6deg);
+  margin-top: -145px;
+  margin-left: -20px;
+  transition: all ease-in-out 200ms;
+
+  @media (min-width: 0) and (max-width: 250px) {    
+    display: none;
+  }
+
+  @media (min-width: 250px) and (max-width: 320px) {
+
+    width: 143vw;
+    height: 40vh;
+    min-height: 240px;
+    border-radius: 24%;
+    transform: rotate(-3deg);
+    margin-top: -206px;
+    margin-left: -28px;
+  }
+
+  @media (min-width: 320px) and (max-width:  376px) {
+    height: 230px;
+
+  }
+
+  @media (min-width: 376px) and (max-width: 450px) {
+  
+    height: 41vh;
+  }
+
+  @media (min-width: 450px) and (max-width: 576px) {
+    // background: green;
+    margin-left: -24px;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    margin-left: -115px;
+    transform: rotate(-4deg);
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    // background: black;
+    margin-left: -134px;
+    transform: rotate(-4deg);
+  }
+
+  @media (min-width: 992px)  {
+    // background: white;
+    margin-left: -315px;
+    transform: rotate(-4deg);
+  }
+}
+
+img {
+  
+
+  @media (min-width: 250px) and (max-width: 320px) {
+    width: 70%;
+    margin-left: 20%;
+  }
+
+  @media (min-width: 320px) and (max-width: 376px) {
+    // width: 70%;
+    // margin-left: 20%;
+  }
+  
+}
+
+.logo-placement {
+  
+  min-height: 70px;
+
+  @media (min-width: 0px) and (max-width: 250px) {
+    display: none;
+  }  
+
+  @media (min-width: 250px) and (max-width: 320px) {
+    height: 80%;
+    min-height: 80px;
+  }
+
+  @media (min-width: 320px) and (max-width: 376px) {
+    height: 90px;
+  }
+
+  @media (min-width: 376px) and (max-width: 450px) {
+    height: 100px;
+  }        
+
+  @media (min-width: 450px) and (max-width: 576px) {
+    height: 100px;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 100px;
+  }
+
+  @media (min-width: 992px) {
+    height: 200px;
+  }
+}

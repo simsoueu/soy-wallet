@@ -1,0 +1,160 @@
+
+.input-containers {
+	display: flex;
+	flex-direction: column;
+  padding-left: 0.5rem;
+  padding-right: 1rem
+};
+
+.photoPlaceholder {
+	width: 98px;
+	height: 98px;
+	background: #ffffff3d;
+	border-radius: 50%;
+	border: 3px dashed #ffffff80;
+	margin: auto;
+	color: white;
+	display: flex;
+	justify-content: center;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: center;
+
+		ion-icon {
+			font-size:40px;
+		}
+
+		.photoLabel {
+			font-size: .5rem;
+			text-align: center;
+			text-transform: uppercase;
+		}	
+	}
+
+	  @media (min-width: 320px) and (max-width:  376px) {
+    	margin-bottom: 10px;
+      width: 80px;
+      height: 80px;
+  	}
+
+    @media (min-width: 376px) and (max-width: 450px) {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: 450px) and (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: 992px)  {
+      margin-bottom: 45px;
+    }
+}
+
+.medium-box {
+	background: transparent;
+	height: 6rem;
+	display: block;
+} 
+
+.hide-xs {
+	@media (min-width: 251px)  {
+      display: none;
+  }
+
+}
+
+// ion-input {
+// 	margin: 5px;
+// 	background: white;
+//     border: 2px solid #24a337;
+//     border-radius: 5px;
+// }
+
+.typeClient {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  ion-label {
+  	font-family: 'Lato', sans-serif;
+  	color: white;
+  	font-size: 1rem;
+  }
+}
+
+
+
+.login-logo {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 200px;
+  text-align: center;
+}
+
+.login-logo img {
+  max-width: 80%;
+  max-width: 250px;
+}
+
+.cool-grad {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-flow: column;
+  justify-content: space-between;
+  background: transparent linear-gradient(180deg, #9ad24b 0%, #288b37 100%) 0%
+    0% no-repeat padding-box;
+
+  height: 100vh;
+}
+
+.bg-logo {
+  width: 125vw;
+  height: 45vh;
+  min-height: 250px;
+  position: fixed;
+  background: white;
+  border-radius: 30%;
+  transform: rotate(-4deg);
+  margin-top: -100px;
+  margin-left: -20px;
+}
+
+.register-user-link {
+  color: white;
+  text-decoration: none;
+}
+
+ion-img {
+  margin: auto;
+  padding-top: 25%;
+  padding-bottom: 2em;
+  width: 80%;
+}
+
+ion-button {
+  color: white;
+}
+
+
+ion-input {
+  margin: 5px;
+  background: #ffffffa3;
+  border: 2px solid #24a337;
+  border-radius: 5px;
+}

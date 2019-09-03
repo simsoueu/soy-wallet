@@ -1,0 +1,92 @@
+<ion-content justify-content-center no-padding>
+  <ion-row no-padding>
+    <ion-col justify-content-between class="cool-grad">
+      <ion-row padding-bottom justify-content-center>
+        <app-header></app-header>
+      </ion-row>
+      <ion-row padding-top justify-content-center align-items-end>
+        <ion-col
+          justify-content-end
+          size-xs="11"
+          size-sm="8"
+          size-md="6"
+          size-lg="4"
+          >
+          <form #loginForm="ngForm">
+          <ion-row>
+            <ion-input
+              name="email"
+              type="email"
+              placeholder="E-mail"
+              [(ngModel)]="login.email"
+              required
+              class="ion-padding-horizontal"
+              >
+            </ion-input>
+          
+          </ion-row>
+          <ion-row>
+            <ion-input
+              name="password"
+              type="password"
+              placeholder="Senha"
+              [(ngModel)]="login.password"
+              ngModel
+              required
+              class="ion-padding-horizontal"
+              >
+            </ion-input>
+          </ion-row>
+          <!-- <div class="ion-text-right"> -->
+          <ion-row justify-content-end padding>
+            <a
+              routerLink="/signup"
+              routerDirection="forward"
+              class="register-user-link"
+              >
+            Não possui uma conta? Cadastre-se.</a
+              >
+          </ion-row>
+          <!-- </div> -->
+          <ion-row>
+            <ion-col>
+              <ion-button
+                size="large"
+                (click)="onLogin(loginForm)"
+                type="submit"
+                shape="round"
+                [disabled]="!checkForm()"
+                expand="block"
+                style="font-size: 0.95em"
+                >Entrar
+              </ion-button>
+              
+            </ion-col>
+
+          </ion-row>
+          </form>
+        </ion-col>
+      </ion-row>
+
+      <ion-row justify-content-center>
+        <ion-col size-xs="11"
+          size-sm="8"
+          size-md="6"
+          size-lg="4" padding>
+          <ion-button 
+            shape="round"
+            size="large"
+            type="submit"
+            expand="block"
+            color="tertiary"
+            style="font-size: 0.9em"
+            >
+            <ion-icon name="logo-facebook" slot="start"></ion-icon>
+            Entrar com o Facebook
+          </ion-button
+            >
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,86 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{concert?.name}}</ion-title>
+  </ion-toolbar>
+  </ion-header> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back" [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-img src="/assets/img/Logo.png" 
+        style="width: 25px; margin: auto">
+      </ion-img>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="concert" class="ion-no-padding">
+    <ion-row padding-top justify-content-center align-items-end>
+      <ion-col justify-content-end size="12" size-lg="10">
+        <img [src]="concert.imgUrl" />
+      </ion-col>
+    </ion-row>
+    <div justify-content-end
+      size-xs="11"
+      size-sm="8"
+      size-md="6"
+      size-lg="4" class="ion-padding-horizontal">
+      <ion-row>
+        
+
+        <ion-col class="circle-container">
+          <div class="circle"></div>
+          cardapio
+        </ion-col>
+
+        <ion-col class="circle-container">
+          <div class="circle"></div>
+          lineup
+        </ion-col>
+      
+      </ion-row>
+      
+      <ion-row>
+        
+        <ion-col (click)="goToPage('info')" class="circle-container">
+          <div class="circle"></div>
+          informações
+        </ion-col>
+
+        <ion-col class="circle-container">
+          <div class="circle"></div>
+          checkout
+        </ion-col>
+      
+      </ion-row>
+    </div>
+    
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row justify-content-center class="bottom-bar">
+      <ion-col>
+      <div>
+        Patrocinadores
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        QR Code
+      </div>
+    </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

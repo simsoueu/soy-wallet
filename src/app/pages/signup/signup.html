@@ -1,0 +1,101 @@
+<ion-content justify-content-center no-padding>
+  <ion-row no-padding>
+    <ion-col justify-content-between class="cool-grad">
+      <ion-row padding-bottom justify-content-center>
+        <app-header></app-header>
+      </ion-row>
+      <ion-row justify-content-center align-items-center no-padding>
+        <ion-col size-xs="11" size-sm="8" size-md="6" size-lg="4"
+        >
+          <ion-row justify-content-center align-items-end>
+            <ion-col justify-content-end>
+              <form #signupForm="ngForm" method="post">
+                <ion-row class="photoPlaceholder">
+                  <div>
+                    <ion-icon name="image"></ion-icon>
+                    <div class="photoLabel">
+                        inserir foto
+                      <div></div>
+                    </div>
+                  </div>
+                </ion-row>
+                <div class="medium-box hide-xs"></div>
+                <ion-row>
+                  <ion-input
+                    name="name"
+                    type="text"
+                    placeholder="Nome Completo"
+                    [(ngModel)]="user.name"
+                    required
+                    class="ion-padding-horizontal"
+                    [ngModelOptions]="{ standalone: true }"
+                  ></ion-input>
+                </ion-row>
+                <ion-row>
+                  <ion-input
+                    name="email"
+                    type="email"
+                    placeholder="E-mail"
+                    [(ngModel)]="user.email"
+                    required
+                    class="ion-padding-horizontal"
+                  ></ion-input>
+                </ion-row>
+                <ion-row>
+                  <ion-input
+                    name="password"
+                    type="password"
+                    placeholder="Senha"
+                    [(ngModel)]="user.password"
+                    required
+                    class="ion-padding-horizontal"
+                  ></ion-input>
+                </ion-row>
+                <ion-row>
+                  <ion-input
+                    name="phone"
+                    type="text"
+                    placeholder="Telefone"
+                    [(ngModel)]="user.phone"
+                    required
+                    class="ion-padding-horizontal"
+                  ></ion-input>
+                </ion-row>
+                <ion-row>
+                <ion-list no-padding class="bg-transparent" style="color: white">
+                  <span style="padding-left: 15px">Tipo de cliente:</span>
+                  <ion-radio-group class="typeClient">
+                    <ion-item color="none" lines="none">
+                      <ion-label>Cliente</ion-label>
+                      <ion-radio slot="start" value="user.client" checked></ion-radio>
+                    </ion-item>
+                    <ion-item color="none" lines="none">
+                      <ion-label>Staff</ion-label>
+                      <ion-radio slot="start" value="user.staff"></ion-radio>
+                    </ion-item>
+                  </ion-radio-group>
+                </ion-list>
+                </ion-row>
+              </form>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button 
+            shape="round"
+            size="large"
+            type="submit"
+            [disabled]="!checkForm()"
+            (click)="onSignup(signupForm)"
+            expand="block"
+            style="font-size: 0.9em; padding-top: 0"
+            >
+            Cadastrar
+          </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>

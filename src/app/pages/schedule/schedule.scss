@@ -1,0 +1,51 @@
+$categories: (
+  ionic: var(--ion-color-primary),
+  angular: #ac282b,
+  communication: #8e8d93,
+  tooling: #fe4c52,
+  services: #fd8b2d,
+  design: #fed035,
+  workshop: #69bb7b,
+  food: #3bc7c4,
+  documentation: #b16be3,
+  navigation: #6600cc
+);
+
+@each $track, $value in map-remove($categories) {
+  ion-item-sliding[track='#{$track}'] ion-label {
+    border-left: 2px solid $value;
+    padding-left: 10px;
+  }
+}
+
+
+.myCard {
+    position:relative;
+}
+  
+.myOverlay{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-details {
+  display: flex; flex-direction: row; justify-content: space-between;
+}
+
+// .card-address {
+//     width: 50%;
+// }
+// .card-date {
+//     float: left;
+// }

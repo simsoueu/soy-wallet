@@ -1,0 +1,58 @@
+.login-logo {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 200px;
+  text-align: center;
+}
+
+.login-logo img {
+  max-width: 80%;
+  max-width: 250px;
+}
+
+.cool-grad {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  background: transparent linear-gradient(180deg, #9ad24b 0%, #288b37 100%) 0%
+    0% no-repeat padding-box;
+
+  height: 100vh;
+}
+
+.bg-logo {
+  width: 125vw;
+  height: 45vh;
+  min-height: 250px;
+  position: fixed;
+  background: white;
+  border-radius: 30%;
+  transform: rotate(-4deg);
+  margin-top: -100px;
+  margin-left: -20px;
+}
+
+.register-user-link {
+  color: white;
+  text-decoration: none;
+}
+
+ion-img {
+  margin: auto;
+  padding-top: 25%;
+  padding-bottom: 2em;
+  width: 80%;
+}
+
+ion-button {
+  color: white;
+}
+
+
+ion-input {
+  margin: 5px;
+  background: #ffffffa3;
+  border: 2px solid #24a337;
+  border-radius: 5px;
+}
